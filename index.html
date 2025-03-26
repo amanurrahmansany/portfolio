@@ -54,18 +54,24 @@
             margin: 8px 0;
         }
 
-        h4 {margin: 8px 0;
-            font-family: monospace;
-            text-warp: nowrap;
-            overflow: hidden;
-            animation: typing 2s steps(20) infinite alternate-reverse;
+        h4 {
+        display: flex;
+        justify-content: center;
+        margin: 8px 0; /* Keeping your original margin */
+        font-family: monospace;
+        animation: typing 3s steps(20) infinite alternate-reverse;
         }
-
+        
         @keyframes typing {
-            from{
-                wide: 0ch
-            }
-        }
+            
+    from {
+        width: 0ch;
+    }
+    to {
+        width: 80ch;
+    }
+    }
+  
         .name-highlight {
             color: rgb(255, 255, 255);
             font-weight: bold;
@@ -76,6 +82,9 @@
             color: rgb(33, 149, 216);
             font-weight: bold;
             font-size: 26px;
+            display: inline-block;
+            overflow: hidden;
+            white-space: nowrap;
         }
         ul {
             list-style: none;
@@ -85,6 +94,9 @@
         li {
             margin: 5px 0;
         }
+
+
+
 
         /* Responsive adjustments for small devices */
         @media (max-width: 768px) {
