@@ -55,8 +55,17 @@
         }
 
         h4 {margin: 8px 0;
+            font-family: monospace;
+            text-warp: nowrap;
+            overflow: hidden;
+            animation: typing 2s steps(20) infinite alternate-reverse;
         }
-        
+
+        @keyframes typing {
+            from{
+                wide: 0ch
+            }
+        }
         .name-highlight {
             color: rgb(255, 255, 255);
             font-weight: bold;
