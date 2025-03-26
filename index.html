@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -54,24 +55,9 @@
             margin: 8px 0;
         }
 
-        h4 {
-        display: flex;
-        justify-content: center;
-        margin: 8px 0; /* Keeping your original margin */
-        font-family: monospace;
-        animation: typing 3s steps(20) infinite alternate-reverse;
+        h4 {margin: 8px 0;
         }
         
-        @keyframes typing {
-            
-    from {
-        width: 0ch;
-    }
-    to {
-        width: 60ch;
-    }
-    }
-  
         .name-highlight {
             color: rgb(255, 255, 255);
             font-weight: bold;
@@ -82,9 +68,6 @@
             color: rgb(33, 149, 216);
             font-weight: bold;
             font-size: 26px;
-            display: inline-block;
-            overflow: hidden;
-            white-space: nowrap;
         }
         ul {
             list-style: none;
@@ -95,25 +78,12 @@
             margin: 5px 0;
         }
 
-
-
-
         /* Responsive adjustments for small devices */
         @media (max-width: 768px) {
             .container {
                 width: 90%;
                 padding: 15px;
             }
-            .profile-picture {
-            position: absolute;
-            top: 10px;
-            right: 10px;
-            width: 50px;
-            height: 50px;
-            border-radius: 20%;
-            object-fit: fill;
-            background-image: none;
-            border: 1px solid #ffffff;
         }
     </style>
 </head>
@@ -160,7 +130,7 @@
         </section>
     </div>
     <!-- Profile Picture -->
-    <img src="image.jpg" alt="Profile Picture" class="profile-picture">
+    <img src="white_copy.jpg" alt="Profile Picture" class="profile-picture">
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     <script>
